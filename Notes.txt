@@ -8,6 +8,14 @@ Drop Potential: <<DONE>>
 7. status: same as labels
 8. state_code.1: same as state_code
 9. object_id: same as id
+10. state_code: one hot encoding
+11. city
+12. name: each row has its own unique values
+13. founded_at: turn to age
+14. closed_at: turn to age
+15. first_funding_at
+16. last_funding_at
+17. category_code: cover by one hot encoding
 
 Question:
 1. age_first_funding_year (pendanaan pertama)
@@ -40,7 +48,7 @@ Features:
 Target:
 1. labels
 
-engineering:
+engineering: <<DONE>>
 fill in missing values in closed_at with closed_at(max) + 1 day
 1. age = (closed_at - founded_at)
 
@@ -50,3 +58,7 @@ state_code.1, category_code, object_id, status]
 numerical = [Unnamed: 0, latitude, longitude, labels, age_first_funding_year, age_last_funding_year, age_first_milestone_year, age_last_milestone_year, relationships, funding_rounds,
 funding_total_usd, milestones, is_CA, is_NY, is_MA, is_TX, is_otherstate, is_software, is_web, is_mobile, is_enterprise, is_advertising, is_gamesvideo, is_ecommerce, is_biotech, is_consulting,
 is_othercategory,has_VC, has_angel, has_roundA, has_roundB, has_roundC, has_roundD, avg_participants, is_top500]
+
+outlier = log_age_first_funding_year
+log_age_first_milestone_year, log_age_last_milestone_year, relationships,
+log_funding_total_usd, log_avg_participants, log_age
