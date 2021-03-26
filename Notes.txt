@@ -1,0 +1,52 @@
+Drop Potential: <<DONE>>
+1. Unnamed: 0
+2. Unnamed: 6 (Same as City)
+3. id: because each record has its own unique value
+4. latitude: cover up by state_code
+5. longitude: cover up by state_code
+6. zip_code: cover up by city
+7. status: same as labels
+8. state_code.1: same as state_code
+9. object_id: same as id
+
+Question:
+1. age_first_funding_year (pendanaan pertama)
+2. age_last_funding_year (pendanaan terakhir)
+3. age_first_milestone_year (pencapaian pertama)
+4. age_last_milestone_year (pencapaian terakhir)
+5. relationship (dengan siapa??)
+6. funding_rounds (stage pendanaan)
+7. milestones (pencapaian(?))
+
+Features:
+1. name
+2. city
+3. founded_at
+4. closed_at
+5. first_funding_at
+6. last_funding_at
+7. funding_total_usd
+8. state_code.1 ==> change to state
+9. is_(CA, NY, MA, TX, otherstate(change to other)) 5 features
+10. category_code ==> change to category
+11. is_(software, web, mobile, enterprise, advertising, gamesvideo, ecommerce, biotech, consulting, othercategory(change to other_cat)) 10 features
+12. has_VC
+13. has_angel
+14. has_(roundA, roundB, roundC, roundD) 4 features
+15. avg_participants
+16. is_top500
+17. age
+
+Target:
+1. labels
+
+engineering:
+fill in missing values in closed_at with closed_at(max) + 1 day
+1. age = (closed_at - founded_at)
+
+categorical = [state_code, zip_code, id, city, Unnamed: 6, name, founded_at, closed_at, first_funding_at, last_funding_at,
+state_code.1, category_code, object_id, status]
+
+numerical = [Unnamed: 0, latitude, longitude, labels, age_first_funding_year, age_last_funding_year, age_first_milestone_year, age_last_milestone_year, relationships, funding_rounds,
+funding_total_usd, milestones, is_CA, is_NY, is_MA, is_TX, is_otherstate, is_software, is_web, is_mobile, is_enterprise, is_advertising, is_gamesvideo, is_ecommerce, is_biotech, is_consulting,
+is_othercategory,has_VC, has_angel, has_roundA, has_roundB, has_roundC, has_roundD, avg_participants, is_top500]
