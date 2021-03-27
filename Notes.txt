@@ -62,3 +62,80 @@ is_othercategory,has_VC, has_angel, has_roundA, has_roundB, has_roundC, has_roun
 outlier = log_age_first_funding_year
 log_age_first_milestone_year, log_age_last_milestone_year, relationships,
 log_funding_total_usd, log_avg_participants, log_age
+
+**RANDOM FOREST**
+if 80:20
+<<accuracy: 81.1>>
+<<precision: 78.1>>
+<<recall: 95.5>>
+<<F1: 85.9>>
+
+if 70:30
+<<accuracy: 81.6>>
+<<precision: 80.6>>
+<<recall: 93.8>>
+<<F1: 86.7>>
+
+hyperparameter
+<<accuracy: 83.4>>
+<<precision: 82.0>>
+<<recall: 94.9>>
+<<F1: 88.0>>
+
+**DECISION TREE**
+if 70:30
+<<accuracy: 77.6>>
+<<precision: 81.4>>
+<<recall: 84.2>>
+<<F1: 82.8>>
+
+hyperparameter
+<<accuracy: 68.6>>
+<<precision: 79.2>>
+<<recall: 68.9>>
+<<F1: 73.7>>
+
+**LOGREG**
+if 70:30
+<<accuracy: 75.1>>
+<<precision: 73.9>>
+<<recall: 91.1>>
+<<F1: 81.6>>
+
+hyperparameter
+<<accuracy: 60.5>>
+<<precision: 60.5>>
+<<recall: 100>>
+<<F1: 75.4>>
+
+**KNN**
+if 70:30
+<<accuracy: 70.3>>
+<<precision: 71.4>>
+<<recall: 84.8>>
+<<F1: 77.6>>
+
+hyperparameter
+<<accuracy: 81.6>>
+<<precision: 78.7>>
+<<recall: 95.5>>
+<<F1: 86.3>>
+
+**XGBoost**
+if 70:30
+<<accuracy: 82.2>>
+<<precision: 80.2>>
+<<recall: 93.8>>
+<<F1: 86.4>>
+
+hyperparameter
+<<accuracy: 83.2>>
+<<precision: 79.6>>
+<<recall: 97.3>>
+<<F1: 87.6>>
+
+
+The percentage of successfull startup is 67.39%
+The number of startup which predicted success using Random Forest model are 622 out of 923 startups
+Score difference between prediction and real percentage is 2.71 %
+It's about 25 startups that supposed to be failed but predicted success by the model
