@@ -17,6 +17,5 @@ This dataset is obtained from [Startup Success Prediction | Kaggle](https://www.
 1. Jupyter Notebook
 2. Web browser (Chrome)
 
-coba dulu
-
+"Hello world!"
 <img src='https://drive.google.com/uc?id=17PpUAMsSIRlMHleGhoO0E_S38ble3trd' width='25%'>
