@@ -19,6 +19,3 @@ This dataset is obtained from [Startup Success Prediction | Kaggle](https://www.
 
 
 <img src='https://drive.google.com/uc?id=17PpUAMsSIRlMHleGhoO0E_S38ble3trd' width='25%'>
-
-
-`Hello, Team. Let me join!`
