@@ -18,3 +18,5 @@ This dataset is obtained from [Startup Success Prediction | Kaggle](https://www.
 2. Web browser (Chrome)
 
 <img src='https://drive.google.com/uc?id=17PpUAMsSIRlMHleGhoO0E_S38ble3trd' width='25%'>
+
+`Hello, Team! I'm Jomen. Please let me in.`
